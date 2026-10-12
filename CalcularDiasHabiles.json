@@ -1,0 +1,25 @@
+{
+    "data": {
+        "name": "CalcularDiasHabiles",
+        "entryPoint": "ApiVacaciones.CalcularDiasHabiles.Run",
+        "scriptFile": "ApiVacaciones.dll",
+        "language": "dotnet-isolated",
+        "functionDirectory": "",
+        "bindings": [
+            {
+                "name": "req",
+                "type": "httpTrigger",
+                "direction": "In",
+                "authLevel": "Anonymous",
+                "methods": [
+                    "post"
+                ]
+            },
+            {
+                "name": "$return",
+                "type": "http",
+                "direction": "Out"
+            }
+        ]
+    }
+}
